@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+
+	<!-- Give product a unique id per platform -->
+	<?if $(var.Platform)=x64?>
+	<?define ProductCode = "{DF88336E-1094-4C80-9500-9736AC971408}"?>
+	<?else?>
+	<?define ProductCode = "{FC5B39AA-7C97-47AB-B0D8-71DFCC625B60}"?>
+	<?endif?>
+
+	<!-- Fixed upgrade id -->
+	<?define UpgradeCode = "{5EC2EE40-4ADF-48A4-8DDC-D74F0D2B1DB1}"?>
+	<?define BuildVersion = "1.2.3.4"?>
+
+	<!-- Define main product -->
+	<Product Id="$(var.ProductCode)"
+			 Name="!(loc.ProductName_$(var.Platform))"
+			 Language="!(loc.Language)"
+			 Version="$(var.BuildVersion)"
+			 Manufacturer="!(loc.Company)"
+			 UpgradeCode="$(var.UpgradeCode)">
+
+		<!-- Provide package details -->
+		<Package InstallerVersion="200"
+				 Compressed="yes"
+				 InstallScope="perMachine"
+				 Platform="$(var.Platform)"
+				 Manufacturer="!(loc.Company)"
+				 Description="!(loc.Description)"
+				 Keywords="!(loc.Keywords)"
+				 Comments="!(loc.Comments)"
+				 Languages="!(loc.Language)"/>
+
+		<!-- Downgrade error message -->
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+
+		<!-- include .cab file into .msi file -->
+		<MediaTemplate
+			EmbedCab="yes"
+			/>
+
+		<!-- Define main app icon -->
+		<Icon Id="icon.ico" SourceFile="$(var.WildGrass Desktop f8.ProjectDir)\Activities\res\app.ico"/>
+
+		<!-- Use the icon.ico for the installer (shows up in Add/Remove programs) -->
+		<Property Id="ARPPRODUCTICON">icon.ico</Property>
+
+		<!-- Help/Support website -{shows up in the Add/Remove programs} -->
+		<Property Id="ARPURLINFOABOUT">!(loc.HelpWebsite)</Property>
+
+		<!-- Create base UI for installer -->
+		<UIRef Id="WixUI_Minimal" />
+		
+		<!-- Change installer UI background images -->
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\My License.rtf"/>
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\background.bmp"/>
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\banner.bmp"/>
+
+
+		<!-- Define components, shortcuts, files, etc... for installer -->
+		<Feature Id="ProductFeature" Title="WildGrass" Level="1">
+
+			<ComponentGroupRef Id="ProductComponents" />
+
+		</Feature>
+	</Product>
+</Wix>

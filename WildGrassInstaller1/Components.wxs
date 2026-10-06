@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<Fragment>
+		
+		<!-- Product Components -->
+		<ComponentGroup Id="ProductComponents">
+			
+			<!-- <ComponentRef Id="TestFile"/>  -->
+		
+		</ComponentGroup>
+	
+		<!-- Install files -->
+		<DirectoryRef Id="INSTALLFOLDER" FileSource="..\WildGrass Desktop f8\bin\Release\net6.0-windows\publish\win-$(var.Platform)\">
+			
+		</DirectoryRef>
+	</Fragment>
+	
+</Wix>

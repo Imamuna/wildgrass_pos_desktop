@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+
+	<String Id="Company">WildGrass</String>
+	<String Id="HelpWebsite">https://wildgrass.web.app</String>
+
+	<String Id="Description">The WildGrass robust, flexible and simple to use Point Of Sales(POS) Application.</String>
+	<String Id="Keywords">sales, pos, counter, accounting, inventory, purchases, orders, cash, supplier, customer</String>
+	<String Id="Comments">This application is awesome... version grass blade, developed by the Titan family.</String>
+	
+	<String Id="DowngradeErrorMessage">A newer version of WildGrass POS is already installed.</String>
+
+	<String Id="ProductFolderName">WildGrass</String>
+	
+	<String Id="ProductName_x86">WildGrass App (32bit)</String>
+	<String Id="ProductName_x64">WildGrass App (64bit)</String>
+	
+	<String Id="Language">1033</String>
+</WixLocalization>
