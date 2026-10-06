@@ -1,0 +1,12 @@
+﻿<Application x:Class="WildGrass_Desktop_f8.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WildGrass_Desktop_f8">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
+
+<!--StartupUri="/Activities/starter/StarterWindow.xaml"-->
+<!--StartupUri="/Activities/main/MainWindow.xaml"-->
+<!--StartupUri="/Activities/SplashWindow.xaml"-->

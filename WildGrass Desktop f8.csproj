@@ -1,0 +1,419 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>WildGrass_Desktop_f8</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64;x86;ARM32;ARM64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WildGrass Analytics\**" />
+    <EmbeddedResource Remove="WildGrass Analytics\**" />
+    <None Remove="WildGrass Analytics\**" />
+    <Page Remove="WildGrass Analytics\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Activities\components\baseline_add_box_white_48dp.png" />
+    <None Remove="Activities\components\baseline_add_white_48dp.png" />
+    <None Remove="Activities\components\baseline_play_arrow_white_48dp.png" />
+    <None Remove="Activities\components\controls\bad_debt_icon.png" />
+    <None Remove="Activities\components\controls\bad_debt_icon_disable.png" />
+    <None Remove="Activities\components\controls\outline_share_black_48dp.png" />
+    <None Remove="Activities\components\controls\undraw_Add_files_re_v09g.png" />
+    <None Remove="Activities\components\favicon.png" />
+    <None Remove="Activities\components\multibranch\icons8-hierarchy-32 %281%29.png" />
+    <None Remove="Activities\components\multibranch\icons8-hierarchy-32.png" />
+    <None Remove="Activities\components\outline_arrow_back_ios_black_48dp.png" />
+    <None Remove="Activities\components\outline_arrow_forward_ios_black_48dp.png" />
+    <None Remove="Activities\components\outline_cancel_black_48dp.png" />
+    <None Remove="Activities\components\outline_category_black_48dp.png" />
+    <None Remove="Activities\components\outline_clear_all_black_48dp.png" />
+    <None Remove="Activities\components\outline_close_white_48dp.png" />
+    <None Remove="Activities\components\outline_delete_black_48dp.png" />
+    <None Remove="Activities\components\outline_delete_white_48dp.png" />
+    <None Remove="Activities\components\outline_done_all_black_48dp.png" />
+    <None Remove="Activities\components\outline_edit_black_48dp.png" />
+    <None Remove="Activities\components\outline_remove_white_48dp.png" />
+    <None Remove="Activities\components\outline_workspace_premium_white_24dp.png" />
+    <None Remove="Activities\dialogs\animation_500_l4wjv0er.gif" />
+    <None Remove="Activities\dialogs\baseline_add_box_white_48dp.png" />
+    <None Remove="Activities\dialogs\baseline_add_white_48dp.png" />
+    <None Remove="Activities\dialogs\floating_icon.png" />
+    <None Remove="Activities\dialogs\icons8-lock-48.png" />
+    <None Remove="Activities\dialogs\outline_arrow_forward_ios_black_48dp.png" />
+    <None Remove="Activities\dialogs\outline_arrow_forward_ios_white_48dp.png" />
+    <None Remove="Activities\dialogs\outline_cancel_black_48dp.png" />
+    <None Remove="Activities\dialogs\outline_clear_all_black_48dp.png" />
+    <None Remove="Activities\dialogs\outline_close_black_48dp.png" />
+    <None Remove="Activities\dialogs\outline_close_white_48dp.png" />
+    <None Remove="Activities\dialogs\outline_file_upload_black_48dp.png" />
+    <None Remove="Activities\dialogs\outline_remove_white_48dp.png" />
+    <None Remove="Activities\dialogs\undraw_Add_files_re_v09g.png" />
+    <None Remove="Activities\dialogs\undraw_Add_to_cart_re_wrdo.png" />
+    <None Remove="Activities\dialogs\undraw_Developer_activity_re_39tg.png" />
+    <None Remove="Activities\dialogs\undraw_Upgrade_re_gano.png" />
+    <None Remove="Activities\dialogs\upgrade_btn.gif" />
+    <None Remove="Activities\eliephant_b.png" />
+    <None Remove="Activities\eliephant_c3.png" />
+    <None Remove="Activities\logo-dark.png" />
+    <None Remove="Activities\main\109657-pyramid-progress.gif" />
+    <None Remove="Activities\main\appicon.png" />
+    <None Remove="Activities\main\barcode.png" />
+    <None Remove="Activities\main\baseline_add_black_48dp.png" />
+    <None Remove="Activities\main\baseline_add_box_black_48dp.png" />
+    <None Remove="Activities\main\baseline_add_circle_black_48dp.png" />
+    <None Remove="Activities\main\baseline_add_circle_outline_black_48dp.png" />
+    <None Remove="Activities\main\baseline_indeterminate_check_box_black_48dp.png" />
+    <None Remove="Activities\main\baseline_notifications_black_48dp.png" />
+    <None Remove="Activities\main\baseline_notifications_white_48dp.png" />
+    <None Remove="Activities\main\baseline_table_chart_black_48dp.png" />
+    <None Remove="Activities\main\Book keeping\undraw_under_construction_46pa.png" />
+    <None Remove="Activities\main\dashboards\icons8-graph-32.png" />
+    <None Remove="Activities\main\icons8-lock-48 %282%29.png" />
+    <None Remove="Activities\main\icons8-lock-48.png" />
+    <None Remove="Activities\main\icons8-new-64.png" />
+    <None Remove="Activities\main\icons8-quick-mode-on-48.png" />
+    <None Remove="Activities\main\icons8-refresh-50.png" />
+    <None Remove="Activities\main\InternalControls\add_logo_img.png" />
+    <None Remove="Activities\main\InternalControls\baseline_add_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\baseline_add_circle_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\dNote_icon.png" />
+    <None Remove="Activities\main\InternalControls\dNote_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\icons8-file-240.png" />
+    <None Remove="Activities\main\InternalControls\invoice_related_doc_icon_a.png" />
+    <None Remove="Activities\main\InternalControls\invoice_related_doc_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\order_related_doc_icon_a.png" />
+    <None Remove="Activities\main\InternalControls\order_related_doc_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\outline_arrow_forward_ios_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_clear_all_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_close_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_close_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_delete_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_done_all_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_done_all_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_expand_more_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_keyboard_arrow_up_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_move_up_white_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_toggle_off_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\outline_toggle_on_black_48dp.png" />
+    <None Remove="Activities\main\InternalControls\quo_icon.png" />
+    <None Remove="Activities\main\InternalControls\quo_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\receipt_related_doc_icon_a.png" />
+    <None Remove="Activities\main\InternalControls\receipt_related_doc_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\sales_return_related_doc_icon_a.png" />
+    <None Remove="Activities\main\InternalControls\sales_return_related_doc_icon_disabled.png" />
+    <None Remove="Activities\main\InternalControls\undraw_Add_files_re_v09g.png" />
+    <None Remove="Activities\main\InternalControls\undraw_Choosing_house_re_1rv7.png" />
+    <None Remove="Activities\main\InternalControls\undraw_choosing_house_re_1rv7.svg" />
+    <None Remove="Activities\main\InternalControls\undraw_Thought_process_re_om58.png" />
+    <None Remove="Activities\main\Menus\baseline_sync_alt_white_24dp.png" />
+    <None Remove="Activities\main\Menus\counter.png" />
+    <None Remove="Activities\main\Menus\floating_icon.png" />
+    <None Remove="Activities\main\Menus\icons8-hierarchy-32 %281%29.png" />
+    <None Remove="Activities\main\Menus\outline_badge_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_bolt_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_category_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_chat_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_edit_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_equalizer_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_insights_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_library_books_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_logout_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_point_of_sale_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_receipt_long_white_24dp.png" />
+    <None Remove="Activities\main\Menus\outline_recent_actors_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_request_quote_black_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_request_quote_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_settings_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_storefront_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_table_chart_white_48dp.png" />
+    <None Remove="Activities\main\Menus\outline_workspace_premium_white_24dp.png" />
+    <None Remove="Activities\main\no_items_yet_b.png" />
+    <None Remove="Activities\main\outline_account_circle_black_48dp.png" />
+    <None Remove="Activities\main\outline_account_circle_white_48dp.png" />
+    <None Remove="Activities\main\outline_arrow_back_ios_white_48dp.png" />
+    <None Remove="Activities\main\outline_arrow_forward_ios_black_48dp.png" />
+    <None Remove="Activities\main\outline_auto_stories_white_24dp.png" />
+    <None Remove="Activities\main\outline_category_black_48dp.png" />
+    <None Remove="Activities\main\outline_clear_all_black_48dp.png" />
+    <None Remove="Activities\main\outline_clear_all_white_48dp.png" />
+    <None Remove="Activities\main\outline_done_all_black_48dp.png" />
+    <None Remove="Activities\main\outline_edit_black_48dp.png" />
+    <None Remove="Activities\main\outline_file_download_black_48dp.png" />
+    <None Remove="Activities\main\outline_file_upload_black_48dp.png" />
+    <None Remove="Activities\main\outline_more_vert_black_48dp.png" />
+    <None Remove="Activities\main\outline_move_up_black_48dp.png" />
+    <None Remove="Activities\main\outline_notifications_active_white_48dp.png" />
+    <None Remove="Activities\main\outline_receipt_black_48dp.png" />
+    <None Remove="Activities\main\outline_request_quote_black_48dp.png" />
+    <None Remove="Activities\main\outline_search_black_48dp.png" />
+    <None Remove="Activities\main\outline_search_white_48dp.png" />
+    <None Remove="Activities\main\outline_settings_white_48dp.png" />
+    <None Remove="Activities\main\outline_storefront_white_48dp.png" />
+    <None Remove="Activities\main\preview2.jpg" />
+    <None Remove="Activities\main\undraw_Profile_data_re_v81r.png" />
+    <None Remove="Activities\main\uytwktt4.qzs~" />
+    <None Remove="Activities\multiBranch\109657-pyramid-progress.gif" />
+    <None Remove="Activities\multiBranch\menus\analytics_animation.gif" />
+    <None Remove="Activities\multiBranch\outline_stacked_line_chart_white_48dp.png" />
+    <None Remove="Activities\multiBranch\outline_storefront_white_48dp.png" />
+    <None Remove="Activities\res\appicon.png" />
+    <None Remove="Activities\res\floating_icon.png" />
+    <None Remove="Activities\res\outline_account_circle_white_48dp.png" />
+    <None Remove="Activities\res\outline_badge_white_24dp.png" />
+    <None Remove="Activities\res\outline_category_black_48dp.png" />
+    <None Remove="Activities\res\outline_clear_all_black_48dp.png" />
+    <None Remove="Activities\res\outline_clear_all_white_48dp.png" />
+    <None Remove="Activities\res\outline_close_white_48dp.png" />
+    <None Remove="Activities\res\outline_delete_white_48dp.png" />
+    <None Remove="Activities\res\outline_done_all_black_48dp.png" />
+    <None Remove="Activities\res\outline_edit_black_48dp.png" />
+    <None Remove="Activities\sandbox\outline_arrow_forward_ios_white_48dp.png" />
+    <None Remove="Activities\sandbox\undraw_Add_files_re_v09g.png" />
+    <None Remove="Activities\settings\baseline_cloud_sync_black_48dp.png" />
+    <None Remove="Activities\settings\logo1.png" />
+    <None Remove="Activities\settings\outline_arrow_forward_ios_black_48dp.png" />
+    <None Remove="Activities\settings\outline_edit_black_48dp.png" />
+    <None Remove="Activities\settings\outline_loop_black_48dp.png" />
+    <None Remove="Activities\settings\placeholder_image.png" />
+    <None Remove="Activities\starter\add.png" />
+    <None Remove="Activities\starter\appicon.png" />
+    <None Remove="Activities\starter\forgot_edited.png" />
+    <None Remove="Activities\starter\hello_edited.png" />
+    <None Remove="Activities\starter\icons8-done-64.png" />
+    <None Remove="Activities\starter\icons8-forward-48.png" />
+    <None Remove="Activities\starter\multibranch_intro.png" />
+    <None Remove="Activities\starter\outline_account_circle_white_48dp.png" />
+    <None Remove="Activities\starter\outline_arrow_back_black_48dp.png" />
+    <None Remove="Activities\starter\outline_badge_white_24dp.png" />
+    <None Remove="Activities\starter\outline_close_black_48dp.png" />
+    <None Remove="Activities\starter\outline_file_download_done_black_48dp.png" />
+    <None Remove="Activities\starter\outline_visibility_off_black_24dp.png" />
+    <None Remove="Activities\starter\undraw_data_processing_yrrv.png" />
+    <None Remove="Activities\starter\undraw_design_components_9vy6.png" />
+    <None Remove="Activities\starter\undraw_Forgot_password_re_hxwm.png" />
+    <None Remove="Activities\starter\undraw_Hello_re_3evm.png" />
+    <None Remove="Activities\starter\undraw_Team_collaboration_re_ow29.png" />
+    <None Remove="Activities\starter\undraw_Update_re_swkp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview4" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.3.0" />
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.1.0" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="FireSharp" Version="2.0.4" />
+    <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
+    <PackageReference Include="itext7" Version="7.2.4" />
+    <PackageReference Include="LottieSharp" Version="2.1.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
+    <PackageReference Include="MVVMEssentials.WPF" Version="1.0.3" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+    <PackageReference Include="PrinterUtility" Version="1.2.0" />
+    <PackageReference Include="Spire.PDF" Version="8.6.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="System.Management" Version="6.0.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Activities\components\baseline_add_box_white_48dp.png" />
+    <Resource Include="Activities\components\baseline_add_white_48dp.png" />
+    <Resource Include="Activities\components\baseline_play_arrow_white_48dp.png" />
+    <Resource Include="Activities\components\controls\bad_debt_icon.png" />
+    <Resource Include="Activities\components\controls\bad_debt_icon_disable.png" />
+    <Resource Include="Activities\components\controls\outline_share_black_48dp.png" />
+    <Resource Include="Activities\components\controls\undraw_Add_files_re_v09g.png" />
+    <Resource Include="Activities\components\favicon.png" />
+    <Resource Include="Activities\components\multibranch\icons8-hierarchy-32 (1).png" />
+    <Resource Include="Activities\components\multibranch\icons8-hierarchy-32.png" />
+    <Resource Include="Activities\components\outline_arrow_back_ios_black_48dp.png" />
+    <Resource Include="Activities\components\outline_arrow_forward_ios_black_48dp.png" />
+    <Resource Include="Activities\components\outline_cancel_black_48dp.png" />
+    <Resource Include="Activities\components\outline_delete_black_48dp.png" />
+    <Resource Include="Activities\components\outline_edit_black_48dp.png" />
+    <Resource Include="Activities\components\outline_remove_white_48dp.png" />
+    <Resource Include="Activities\components\outline_workspace_premium_white_24dp.png" />
+    <Resource Include="Activities\dialogs\animation_500_l4wjv0er.gif" />
+    <Resource Include="Activities\dialogs\icons8-lock-48.png" />
+    <Resource Include="Activities\dialogs\outline_arrow_forward_ios_black_48dp.png" />
+    <Resource Include="Activities\dialogs\outline_file_upload_black_48dp.png" />
+    <Resource Include="Activities\dialogs\undraw_Add_files_re_v09g.png" />
+    <Resource Include="Activities\dialogs\undraw_Add_to_cart_re_wrdo.png" />
+    <Resource Include="Activities\dialogs\undraw_Developer_activity_re_39tg.png" />
+    <Resource Include="Activities\dialogs\undraw_Upgrade_re_gano.png" />
+    <Resource Include="Activities\dialogs\upgrade_btn.gif" />
+    <Resource Include="Activities\main\109657-pyramid-progress.gif" />
+    <Resource Include="Activities\main\Book keeping\undraw_under_construction_46pa.png" />
+    <Resource Include="Activities\main\dashboards\icons8-graph-32.png" />
+    <Resource Include="Activities\main\icons8-lock-48 (2).png" />
+    <Resource Include="Activities\main\icons8-lock-48.png" />
+    <Resource Include="Activities\main\icons8-new-64.png" />
+    <Resource Include="Activities\main\icons8-quick-mode-on-48.png" />
+    <Resource Include="Activities\main\InternalControls\baseline_add_black_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\baseline_add_circle_white_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\outline_arrow_forward_ios_black_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\outline_close_black_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\outline_close_white_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\outline_toggle_off_black_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\outline_toggle_on_black_48dp.png" />
+    <Resource Include="Activities\main\InternalControls\undraw_Add_files_re_v09g.png" />
+    <Resource Include="Activities\main\InternalControls\undraw_Choosing_house_re_1rv7.png" />
+    <Resource Include="Activities\main\InternalControls\undraw_choosing_house_re_1rv7.svg" />
+    <Resource Include="Activities\main\InternalControls\undraw_Thought_process_re_om58.png" />
+    <Resource Include="Activities\main\Menus\icons8-hierarchy-32 (1).png" />
+    <Resource Include="Activities\main\Menus\outline_bolt_white_48dp.png" />
+    <Resource Include="Activities\main\Menus\outline_category_white_24dp.png" />
+    <Resource Include="Activities\main\Menus\outline_edit_white_48dp.png" />
+    <Resource Include="Activities\main\Menus\outline_point_of_sale_white_48dp.png" />
+    <Resource Include="Activities\main\Menus\outline_settings_white_48dp.png" />
+    <Resource Include="Activities\main\Menus\outline_storefront_white_48dp.png" />
+    <Resource Include="Activities\main\Menus\outline_workspace_premium_white_24dp.png" />
+    <Resource Include="Activities\main\outline_account_circle_black_48dp.png" />
+    <Resource Include="Activities\main\outline_arrow_back_ios_white_48dp.png" />
+    <Resource Include="Activities\main\outline_arrow_forward_ios_black_48dp.png" />
+    <Resource Include="Activities\main\outline_category_black_48dp.png" />
+    <Resource Include="Activities\main\outline_done_all_black_48dp.png" />
+    <Resource Include="Activities\main\outline_edit_black_48dp.png" />
+    <Resource Include="Activities\main\outline_file_download_black_48dp.png" />
+    <Resource Include="Activities\main\outline_receipt_black_48dp.png" />
+    <Resource Include="Activities\main\outline_request_quote_black_48dp.png" />
+    <Resource Include="Activities\main\preview2.jpg" />
+    <Resource Include="Activities\main\undraw_Profile_data_re_v81r.png" />
+    <Resource Include="Activities\multiBranch\109657-pyramid-progress.gif" />
+    <Resource Include="Activities\multiBranch\menus\analytics_animation.gif" />
+    <Resource Include="Activities\multiBranch\outline_stacked_line_chart_white_48dp.png" />
+    <Resource Include="Activities\multiBranch\outline_storefront_white_48dp.png" />
+    <Resource Include="Activities\res\baseline_add_box_white_48dp.png" />
+    <Resource Include="Activities\res\baseline_add_white_48dp.png" />
+    <Resource Include="Activities\res\outline_arrow_forward_ios_white_48dp.png" />
+    <Resource Include="Activities\res\outline_cancel_black_48dp.png" />
+    <Resource Include="Activities\res\outline_close_black_48dp.png" />
+    <Resource Include="Activities\res\outline_close_white_48dp.png" />
+    <Resource Include="Activities\res\outline_remove_white_48dp.png" />
+    <Resource Include="Activities\res\eliephant_b.png" />
+    <Resource Include="Activities\res\eliephant_c3.png" />
+    <Resource Include="Activities\res\logo-dark.png" />
+    <Resource Include="Activities\res\appicon.png" />
+    <Resource Include="Activities\res\barcode.png" />
+    <Resource Include="Activities\res\baseline_add_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_add_box_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_add_circle_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_add_circle_outline_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_indeterminate_check_box_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_notifications_black_48dp.png" />
+    <Resource Include="Activities\res\baseline_notifications_white_48dp.png" />
+    <Resource Include="Activities\res\baseline_table_chart_black_48dp.png" />
+    <Resource Include="Activities\res\icons8-refresh-50.png" />
+    <Resource Include="Activities\res\add_logo_img.png" />
+    <Resource Include="Activities\res\dNote_icon.png" />
+    <Resource Include="Activities\res\dNote_icon_disabled.png" />
+    <Resource Include="Activities\res\icons8-file-240.png" />
+    <Resource Include="Activities\res\invoice_related_doc_icon_a.png" />
+    <Resource Include="Activities\res\invoice_related_doc_icon_disabled.png" />
+    <Resource Include="Activities\res\order_related_doc_icon_a.png" />
+    <Resource Include="Activities\res\order_related_doc_icon_disabled.png" />
+    <Resource Include="Activities\res\outline_delete_white_48dp.png" />
+    <Resource Include="Activities\res\outline_done_all_black_48dp.png" />
+    <Resource Include="Activities\res\outline_done_all_white_48dp.png" />
+    <Resource Include="Activities\res\outline_expand_more_black_48dp.png" />
+    <Resource Include="Activities\res\outline_keyboard_arrow_up_black_48dp.png" />
+    <Resource Include="Activities\res\outline_move_up_white_48dp.png" />
+    <Resource Include="Activities\res\quo_icon.png" />
+    <Resource Include="Activities\res\quo_icon_disabled.png" />
+    <Resource Include="Activities\res\receipt_related_doc_icon_a.png" />
+    <Resource Include="Activities\res\receipt_related_doc_icon_disabled.png" />
+    <Resource Include="Activities\res\sales_return_related_doc_icon_a.png" />
+    <Resource Include="Activities\res\sales_return_related_doc_icon_disabled.png" />
+    <Resource Include="Activities\res\baseline_sync_alt_white_24dp.png" />
+    <Resource Include="Activities\res\counter.png" />
+    <Resource Include="Activities\res\floating_icon.png" />
+    <Resource Include="Activities\res\outline_badge_white_24dp.png" />
+    <Resource Include="Activities\res\outline_category_white_24dp.png" />
+    <Resource Include="Activities\res\outline_chat_white_24dp.png" />
+    <Resource Include="Activities\res\outline_equalizer_white_24dp.png" />
+    <Resource Include="Activities\res\outline_insights_white_48dp.png" />
+    <Resource Include="Activities\res\outline_library_books_white_24dp.png" />
+    <Resource Include="Activities\res\outline_logout_white_48dp.png" />
+    <Resource Include="Activities\res\outline_receipt_long_white_24dp.png" />
+    <Resource Include="Activities\res\outline_recent_actors_white_48dp.png" />
+    <Resource Include="Activities\res\outline_request_quote_black_48dp.png" />
+    <Resource Include="Activities\res\outline_request_quote_white_48dp.png" />
+    <Resource Include="Activities\res\outline_table_chart_white_48dp.png" />
+    <Resource Include="Activities\res\no_items_yet_b.png" />
+    <Resource Include="Activities\res\outline_account_circle_black_48dp.png" />
+    <Resource Include="Activities\res\outline_account_circle_white_48dp.png" />
+    <Resource Include="Activities\res\outline_auto_stories_white_24dp.png" />
+    <Resource Include="Activities\res\outline_category_black_48dp.png" />
+    <Resource Include="Activities\res\outline_clear_all_black_48dp.png" />
+    <Resource Include="Activities\res\outline_clear_all_white_48dp.png" />
+    <Resource Include="Activities\res\outline_edit_black_48dp.png" />
+    <Resource Include="Activities\res\outline_file_download_black_48dp.png" />
+    <Resource Include="Activities\res\outline_file_upload_black_48dp.png" />
+    <Resource Include="Activities\res\outline_more_vert_black_48dp.png" />
+    <Resource Include="Activities\res\outline_move_up_black_48dp.png" />
+    <Resource Include="Activities\res\outline_notifications_active_white_48dp.png" />
+    <Resource Include="Activities\res\outline_search_black_48dp.png" />
+    <Resource Include="Activities\res\outline_search_white_48dp.png" />
+    <Resource Include="Activities\res\outline_settings_white_48dp.png" />
+    <Resource Include="Activities\res\outline_storefront_white_48dp.png" />
+    <Resource Include="Activities\res\baseline_cloud_sync_black_48dp.png" />
+    <Resource Include="Activities\res\logo1.png" />
+    <Resource Include="Activities\res\outline_arrow_forward_ios_black_48dp.png" />
+    <Resource Include="Activities\res\outline_loop_black_48dp.png" />
+    <Resource Include="Activities\res\placeholder_image.png" />
+    <Resource Include="Activities\res\add.png" />
+    <Resource Include="Activities\res\outline_arrow_back_black_48dp.png" />
+    <Resource Include="Activities\res\outline_visibility_off_black_24dp.png" />
+    <Resource Include="Activities\sandbox\outline_arrow_forward_ios_white_48dp.png" />
+    <Resource Include="Activities\sandbox\undraw_Add_files_re_v09g.png" />
+    <Resource Include="Activities\starter\forgot_edited.png" />
+    <Resource Include="Activities\starter\hello_edited.png" />
+    <Resource Include="Activities\starter\icons8-done-64.png" />
+    <Resource Include="Activities\starter\icons8-forward-48.png" />
+    <Resource Include="Activities\starter\multibranch_intro.png" />
+    <Resource Include="Activities\starter\outline_close_black_48dp.png" />
+    <Resource Include="Activities\starter\outline_file_download_done_black_48dp.png" />
+    <Resource Include="Activities\starter\undraw_data_processing_yrrv.png" />
+    <Resource Include="Activities\starter\undraw_design_components_9vy6.png" />
+    <Resource Include="Activities\starter\undraw_Forgot_password_re_hxwm.png" />
+    <Resource Include="Activities\starter\undraw_Hello_re_3evm.png" />
+    <Resource Include="Activities\starter\undraw_Team_collaboration_re_ow29.png" />
+    <Resource Include="Activities\starter\undraw_Update_re_swkp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Activities\multiBranch\internal controls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WildGrassPOSLibrary\WildGrassPOSLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
