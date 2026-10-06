@@ -1,0 +1,16 @@
+﻿<Window x:Class="WildGrass_Desktop_f8.Tests.TestingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WildGrass_Desktop_f8.Tests"
+        mc:Ignorable="d"
+        Title="TestingWindow" 
+        Height="650" 
+        Width="900">
+    <Grid>
+        <Border BorderThickness=".5" BorderBrush="#DDDDDD" CornerRadius="15" Margin="30" Padding="30">
+            <Canvas x:Name="graphMe"/>
+        </Border>
+    </Grid>
+</Window>
